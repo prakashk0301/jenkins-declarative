@@ -1,0 +1,17 @@
+pipeline
+{
+agent any
+stages
+ {
+   stage('scm checkout') 
+   { steps { echo 'code is downloading'  } }   //you need to provide the actual command
+
+   stage('code build')
+   {steps { echo 'code is building' }}         //you need to provide the actual command
+
+   stage('code deployed')
+   {steps { echo 'code is deployinh' }}        //you need to provide the actual command
+
+}
+
+}
